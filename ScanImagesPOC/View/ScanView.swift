@@ -10,6 +10,7 @@ import VisionKit
 
 struct ScanView: View {
     @ObservedObject var viewModel: ScanViewModel
+    @State var isTimeToNavigate: Bool = false
     var body: some View {
         NavigationView {
         List {
@@ -21,21 +22,25 @@ struct ScanView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit).contextMenu {
                            Button {
-                                let items = [image]
-                                let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
-                            UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController?.present(ac, animated: true)
+                               self.isTimeToNavigate = true
                            } label: {
-                            Label("Share", systemImage: "square.and.arrow.up")
+                            Label("Utilizar Gabarito", systemImage: "square.and.arrow.up")
                            }
                            Divider()
                             Button {
                                 viewModel.removeImage(image: image)
                             } label: {
-                             Label("Delete", systemImage: "delete.left")
+                             Label("Deletar Gabarito", systemImage: "delete.left")
                             }
                             
                         }
                 }
+                NavigationLink("Tela de corrigir prova", isActive: self.$isTimeToNavigate) {
+                    CorrectorView(viewModel: CorrectorViewModel(imageArray: [], rightAnswer: self.viewModel.imageArray.first))
+                }
+//                .sheet(isPresented: self.$isTimeToNavigate) {
+//                            CorrectorView(viewModel: CorrectorViewModel())
+//                        }
             }
          }.navigationTitle("Vinson kit Demo")
         .navigationBarItems(leading: Button(action: {
@@ -47,7 +52,7 @@ struct ScanView: View {
         }).disabled(viewModel.imageArray.count == 0), trailing: Button(action: {
             UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController?.present(viewModel.getDocumentCameraViewController(), animated: true, completion: nil)
         }, label: {
-            Text("Scan New Doc")
+            Text("Scan New Answers Sheet")
         }))
         
         }
