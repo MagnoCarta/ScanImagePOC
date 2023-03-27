@@ -13,7 +13,7 @@ struct ImageResize: ImageModifier {
 
     var size: CGSize
 
-    init(width: CGFloat = 1080, height: CGFloat = 1920) {
+    init(width: CGFloat = 720, height: CGFloat = 1080) {
         self.size = CGSize(width: width, height: height)
     }
     

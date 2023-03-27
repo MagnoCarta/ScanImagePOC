@@ -19,18 +19,19 @@
 		0F59018B29CA751B00B69DB3 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59018A29CA751B00B69DB3 /* ScanViewModel.swift */; };
 		0F59018E29CCF17500B69DB3 /* CorrectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59018D29CCF17500B69DB3 /* CorrectorView.swift */; };
 		0F59019029CCF17E00B69DB3 /* CorrectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59018F29CCF17E00B69DB3 /* CorrectorViewModel.swift */; };
-		0F5901B329CE77F300B69DB3 /* HighContrastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A429CE76F100B69DB3 /* HighContrastFilter.swift */; };
-		0F5901B429CE77F300B69DB3 /* ErosionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59019F29CE76F100B69DB3 /* ErosionFilter.swift */; };
-		0F5901B529CE77F300B69DB3 /* NegativeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59019C29CE76F100B69DB3 /* NegativeFilter.swift */; };
-		0F5901B629CE77F300B69DB3 /* MultiplyBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A129CE76F100B69DB3 /* MultiplyBlendFilter.swift */; };
-		0F5901B729CE77F300B69DB3 /* GrayFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59019D29CE76F100B69DB3 /* GrayFilter.swift */; };
-		0F5901B829CE77F300B69DB3 /* DilationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A029CE76F100B69DB3 /* DilationFilter.swift */; };
-		0F5901B929CE77F300B69DB3 /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A329CE76F100B69DB3 /* ImageResize.swift */; };
-		0F5901BA29CE77F300B69DB3 /* MorphologicalClosing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59019E29CE76F100B69DB3 /* MorphologicalClosing.swift */; };
-		0F5901BB29CE77F300B69DB3 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59019A29CE76EE00B69DB3 /* ImageProcessor.swift */; };
-		0F5901BC29CE77F300B69DB3 /* MorphologicalOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A229CE76F100B69DB3 /* MorphologicalOpening.swift */; };
 		0F5901BD29CE77F900B69DB3 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A629CE76F500B69DB3 /* ImageModifier.swift */; };
 		0F5901BE29CE77FC00B69DB3 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901A829CE76FB00B69DB3 /* CIImage.swift */; };
+		0F5901C029CF26F600B69DB3 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901BF29CF26F600B69DB3 /* ImageProcessor.swift */; };
+		0F5901CD29CF280900B69DB3 /* DilationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C829CF27FE00B69DB3 /* DilationFilter.swift */; };
+		0F5901CE29CF280900B69DB3 /* CompositingBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C929CF27FE00B69DB3 /* CompositingBlendFilter.swift */; };
+		0F5901CF29CF280900B69DB3 /* MorphologicalOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901CA29CF27FE00B69DB3 /* MorphologicalOpening.swift */; };
+		0F5901D029CF280900B69DB3 /* MorphologicalClosing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C629CF27FE00B69DB3 /* MorphologicalClosing.swift */; };
+		0F5901D129CF280900B69DB3 /* ErosionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C729CF27FE00B69DB3 /* ErosionFilter.swift */; };
+		0F5901D229CF280900B69DB3 /* HighContrastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901CC29CF27FE00B69DB3 /* HighContrastFilter.swift */; };
+		0F5901D329CF280900B69DB3 /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901CB29CF27FE00B69DB3 /* ImageResize.swift */; };
+		0F5901D429CF280900B69DB3 /* NegativeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C429CF27FE00B69DB3 /* NegativeFilter.swift */; };
+		0F5901D529CF280900B69DB3 /* GrayFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901C529CF27FE00B69DB3 /* GrayFilter.swift */; };
+		0F5901D729CF8D6700B69DB3 /* MultiplyBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5901D629CF8D6700B69DB3 /* MultiplyBlendFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,18 +67,19 @@
 		0F59018A29CA751B00B69DB3 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
 		0F59018D29CCF17500B69DB3 /* CorrectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectorView.swift; sourceTree = "<group>"; };
 		0F59018F29CCF17E00B69DB3 /* CorrectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectorViewModel.swift; sourceTree = "<group>"; };
-		0F59019A29CE76EE00B69DB3 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
-		0F59019C29CE76F100B69DB3 /* NegativeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeFilter.swift; sourceTree = "<group>"; };
-		0F59019D29CE76F100B69DB3 /* GrayFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayFilter.swift; sourceTree = "<group>"; };
-		0F59019E29CE76F100B69DB3 /* MorphologicalClosing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphologicalClosing.swift; sourceTree = "<group>"; };
-		0F59019F29CE76F100B69DB3 /* ErosionFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErosionFilter.swift; sourceTree = "<group>"; };
-		0F5901A029CE76F100B69DB3 /* DilationFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilationFilter.swift; sourceTree = "<group>"; };
-		0F5901A129CE76F100B69DB3 /* MultiplyBlendFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBlendFilter.swift; sourceTree = "<group>"; };
-		0F5901A229CE76F100B69DB3 /* MorphologicalOpening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphologicalOpening.swift; sourceTree = "<group>"; };
-		0F5901A329CE76F100B69DB3 /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
-		0F5901A429CE76F100B69DB3 /* HighContrastFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighContrastFilter.swift; sourceTree = "<group>"; };
 		0F5901A629CE76F500B69DB3 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		0F5901A829CE76FB00B69DB3 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
+		0F5901BF29CF26F600B69DB3 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = "../../../Downloads/ImageProcessor 2/ImageProcessor.swift"; sourceTree = "<group>"; };
+		0F5901C429CF27FE00B69DB3 /* NegativeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeFilter.swift; sourceTree = "<group>"; };
+		0F5901C529CF27FE00B69DB3 /* GrayFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayFilter.swift; sourceTree = "<group>"; };
+		0F5901C629CF27FE00B69DB3 /* MorphologicalClosing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphologicalClosing.swift; sourceTree = "<group>"; };
+		0F5901C729CF27FE00B69DB3 /* ErosionFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErosionFilter.swift; sourceTree = "<group>"; };
+		0F5901C829CF27FE00B69DB3 /* DilationFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilationFilter.swift; sourceTree = "<group>"; };
+		0F5901C929CF27FE00B69DB3 /* CompositingBlendFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositingBlendFilter.swift; sourceTree = "<group>"; };
+		0F5901CA29CF27FE00B69DB3 /* MorphologicalOpening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphologicalOpening.swift; sourceTree = "<group>"; };
+		0F5901CB29CF27FE00B69DB3 /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
+		0F5901CC29CF27FE00B69DB3 /* HighContrastFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighContrastFilter.swift; sourceTree = "<group>"; };
+		0F5901D629CF8D6700B69DB3 /* MultiplyBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiplyBlendFilter.swift; path = ../../../../.Trash/MultiplyBlendFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,6 @@
 		0F59014829CA68AD00B69DB3 = {
 			isa = PBXGroup;
 			children = (
-				0F59019929CE76D900B69DB3 /* ImageProcessor */,
 				0F59015329CA68AD00B69DB3 /* ScanImagesPOC */,
 				0F59016A29CA68AF00B69DB3 /* ScanImagesPOCTests */,
 				0F59017429CA68AF00B69DB3 /* ScanImagesPOCUITests */,
@@ -129,6 +130,9 @@
 		0F59015329CA68AD00B69DB3 /* ScanImagesPOC */ = {
 			isa = PBXGroup;
 			children = (
+				0F5901C329CF27FE00B69DB3 /* Modifiers */,
+				0F5901BF29CF26F600B69DB3 /* ImageProcessor.swift */,
+				0F59019929CE76D900B69DB3 /* ImageProcessor */,
 				0F59018C29CA753600B69DB3 /* App */,
 				0F59018929CA74F000B69DB3 /* ViewModel */,
 				0F59018829CA74E700B69DB3 /* View */,
@@ -196,26 +200,8 @@
 			children = (
 				0F5901A729CE76FB00B69DB3 /* Extensions */,
 				0F5901A529CE76F500B69DB3 /* Protocols */,
-				0F59019B29CE76F100B69DB3 /* Modifiers */,
-				0F59019A29CE76EE00B69DB3 /* ImageProcessor.swift */,
 			);
 			path = ImageProcessor;
-			sourceTree = "<group>";
-		};
-		0F59019B29CE76F100B69DB3 /* Modifiers */ = {
-			isa = PBXGroup;
-			children = (
-				0F59019C29CE76F100B69DB3 /* NegativeFilter.swift */,
-				0F59019D29CE76F100B69DB3 /* GrayFilter.swift */,
-				0F59019E29CE76F100B69DB3 /* MorphologicalClosing.swift */,
-				0F59019F29CE76F100B69DB3 /* ErosionFilter.swift */,
-				0F5901A029CE76F100B69DB3 /* DilationFilter.swift */,
-				0F5901A129CE76F100B69DB3 /* MultiplyBlendFilter.swift */,
-				0F5901A229CE76F100B69DB3 /* MorphologicalOpening.swift */,
-				0F5901A329CE76F100B69DB3 /* ImageResize.swift */,
-				0F5901A429CE76F100B69DB3 /* HighContrastFilter.swift */,
-			);
-			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		0F5901A529CE76F500B69DB3 /* Protocols */ = {
@@ -232,6 +218,23 @@
 				0F5901A829CE76FB00B69DB3 /* CIImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F5901C329CF27FE00B69DB3 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0F5901D629CF8D6700B69DB3 /* MultiplyBlendFilter.swift */,
+				0F5901C429CF27FE00B69DB3 /* NegativeFilter.swift */,
+				0F5901C529CF27FE00B69DB3 /* GrayFilter.swift */,
+				0F5901C629CF27FE00B69DB3 /* MorphologicalClosing.swift */,
+				0F5901C729CF27FE00B69DB3 /* ErosionFilter.swift */,
+				0F5901C829CF27FE00B69DB3 /* DilationFilter.swift */,
+				0F5901C929CF27FE00B69DB3 /* CompositingBlendFilter.swift */,
+				0F5901CA29CF27FE00B69DB3 /* MorphologicalOpening.swift */,
+				0F5901CB29CF27FE00B69DB3 /* ImageResize.swift */,
+				0F5901CC29CF27FE00B69DB3 /* HighContrastFilter.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,24 +368,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5901BE29CE77FC00B69DB3 /* CIImage.swift in Sources */,
-				0F5901B729CE77F300B69DB3 /* GrayFilter.swift in Sources */,
-				0F5901B929CE77F300B69DB3 /* ImageResize.swift in Sources */,
-				0F5901BB29CE77F300B69DB3 /* ImageProcessor.swift in Sources */,
 				0F59015A29CA68AD00B69DB3 /* ScanImagesPOC.xcdatamodeld in Sources */,
+				0F5901D129CF280900B69DB3 /* ErosionFilter.swift in Sources */,
 				0F59019029CCF17E00B69DB3 /* CorrectorViewModel.swift in Sources */,
+				0F5901CD29CF280900B69DB3 /* DilationFilter.swift in Sources */,
 				0F59015529CA68AD00B69DB3 /* ScanImagesPOCApp.swift in Sources */,
 				0F59018E29CCF17500B69DB3 /* CorrectorView.swift in Sources */,
+				0F5901D229CF280900B69DB3 /* HighContrastFilter.swift in Sources */,
+				0F5901C029CF26F600B69DB3 /* ImageProcessor.swift in Sources */,
 				0F59015C29CA68AD00B69DB3 /* ScanView.swift in Sources */,
-				0F5901B429CE77F300B69DB3 /* ErosionFilter.swift in Sources */,
-				0F5901BC29CE77F300B69DB3 /* MorphologicalOpening.swift in Sources */,
-				0F5901B629CE77F300B69DB3 /* MultiplyBlendFilter.swift in Sources */,
 				0F59018B29CA751B00B69DB3 /* ScanViewModel.swift in Sources */,
-				0F5901BA29CE77F300B69DB3 /* MorphologicalClosing.swift in Sources */,
 				0F59015729CA68AD00B69DB3 /* Persistence.swift in Sources */,
+				0F5901D429CF280900B69DB3 /* NegativeFilter.swift in Sources */,
+				0F5901D029CF280900B69DB3 /* MorphologicalClosing.swift in Sources */,
+				0F5901CF29CF280900B69DB3 /* MorphologicalOpening.swift in Sources */,
+				0F5901D729CF8D6700B69DB3 /* MultiplyBlendFilter.swift in Sources */,
+				0F5901D329CF280900B69DB3 /* ImageResize.swift in Sources */,
+				0F5901D529CF280900B69DB3 /* GrayFilter.swift in Sources */,
+				0F5901CE29CF280900B69DB3 /* CompositingBlendFilter.swift in Sources */,
 				0F5901BD29CE77F900B69DB3 /* ImageModifier.swift in Sources */,
-				0F5901B529CE77F300B69DB3 /* NegativeFilter.swift in Sources */,
-				0F5901B829CE77F300B69DB3 /* DilationFilter.swift in Sources */,
-				0F5901B329CE77F300B69DB3 /* HighContrastFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
